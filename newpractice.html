@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mondrian</title>
+    <style>
+        body
+        {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+
+
+        }
+        .container
+        {
+            height: 748px;
+            width: 748px;
+            display: grid;
+            background-color: #000;
+            gap: 9px;
+            grid-template-columns:  130px  500px 101px;
+            grid-template-rows:     500px  130px 100px;
+
+        }
+
+        .white1
+        {
+            background-color: white;
+
+        }
+        .red
+        {
+            background-color: red;
+            grid-column: span 2;
+
+        }
+        .white2
+        {
+            background-color: white;
+            grid-area: 2 / 1;
+        }
+        .blue
+        {
+            background-color: blue;
+            grid-area: 3/1;
+
+        }
+
+        .white3
+        {
+            background-color: white;
+            grid-row: span 2;
+        }
+
+        .white4
+        {
+            background-color: white;
+
+
+
+        }
+        .yellow
+        {
+            background-color: yellow;
+            grid-area: 3 / 3;
+        }
+
+
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="white1"></div>
+        <div class="red"></div>
+        <div class="white2"></div>
+        <div class="blue"></div>
+        <div class="white3"></div>
+        <div class="white4"></div>
+        <div class="yellow"></div>
+    </div>
+
+
+
+    
+</body>
+</html>
